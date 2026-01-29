@@ -29,7 +29,8 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 600px;
-    animation: fadeInForm 0.8s ease-in 4s forwards;
+    animation: fadeInForm 0.3s ease-in 4s forwards;
+    transition: opacity 0.5s ease, visibility 0.3s ease;
 }
 
 .form-group {
@@ -39,7 +40,7 @@ body {
 .logo-container {
     position: absolute;
     text-align: center;
-    animation: logoSequence 4s ease-in-out forwards;
+    animation: logoSequence 3s ease-in-out forwards;
 }
 
 .logo-image { width: 120px; height: 120px; margin: 0 auto 1rem; object-fit: contain; }
@@ -83,9 +84,12 @@ input:focus {
 }
 
 .btn-login {
-    width: 100%;
-    padding: 1.1rem;
-    background: #FF6B35;
+    display: block; 
+    margin: 1.5rem auto 0;
+    height: 60px;
+    width: 200px; 
+    padding: 0.8rem 2rem; 
+    background: #e66536;
     color: white;
     border: none;
     border-radius: 50px;
@@ -93,7 +97,13 @@ input:focus {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.btn-login:hover {
+    background: #e04a1f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .help-text { text-align: center; margin-top: 1.5rem; color: #999; font-size: 0.85rem; }
+
