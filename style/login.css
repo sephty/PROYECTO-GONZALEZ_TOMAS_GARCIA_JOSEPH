@@ -1,0 +1,99 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: black;
+    background-image: url('../assets/img/pexels-pixabay-159400.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    opacity: 0;
+    background: #f5f5f5;
+    padding: 3rem 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    animation: fadeInForm 0.8s ease-in 4s forwards;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.logo-container {
+    position: absolute;
+    text-align: center;
+    animation: logoSequence 4s ease-in-out forwards;
+}
+
+.logo-image { width: 120px; height: 120px; margin: 0 auto 1rem; object-fit: contain; }
+
+.login-logo-image {
+    width: 100px; 
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.media-text {
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-top: 5px;
+}
+
+.login-header { text-align: center; margin-bottom: 2rem; }
+.login-title { font-size: 1.5rem; font-weight: 600; color: #333; margin-bottom: 0.5rem; line-height: 1.4; }
+.login-subtitle { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+
+label { display: block; margin-bottom: 0.5rem; color: #666; font-weight: 500; font-size: 0.95rem; }
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 2.4rem); 
+    max-width: 100%; 
+    padding: 1rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box; 
+}
+
+input:focus {
+    outline: none;
+    border-color: #eb4b16;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 1.1rem;
+    background: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.help-text { text-align: center; margin-top: 1.5rem; color: #999; font-size: 0.85rem; }
