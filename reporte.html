@@ -1,40 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes</title>
+    <title>Reportes - Kario Media</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/reporte.css">
+    <link rel="stylesheet" href="style/utilities.css">
 </head>
 <body>
     <header class="top-nav-container">
         <div class="top-nav">
-
             <div class="nav-left">
-                <div class="nav-item"><img src="assets/img/Group 3.svg"> Añadir</div>
-                <div class="nav-item"><img src="assets/img/Icon open-reload.svg"> Refrescar</div>
-                <div class="nav-item"><img src="assets/img/Icon material-delete-forever.svg"> Eliminar</div>
+                <div class="nav-item"><img src="assets/img/Group 3.svg" alt="Añadir"> Añadir</div>
+                <div class="nav-item"><img src="assets/img/Icon open-reload.svg" alt="Refrescar"> Refrescar</div>
+                <div class="nav-item"><img src="assets/img/Icon material-delete-forever.svg" alt="Eliminar"> Eliminar</div>
             </div>
 
             <div class="logo-placeholder">
-                <img src="assets/img/kario sin kairo.svg">
+                <img src="assets/img/kario sin kairo.svg" alt="Kario Logo">
             </div>
 
             <div class="nav-right">
-                <div class="nav-item"><img src="assets/img/Icon material-bug-report.svg"> Reportar</div>
-                <div class="nav-item"><img src="assets/img/interrogative.png"> Ayuda</div>
+                <div class="nav-item"><img src="assets/img/Icon material-bug-report.svg" alt="Reportar"> Reportar</div>
+                <div class="nav-item"><img src="assets/img/interrogative.png" alt="Ayuda"> Ayuda</div>
 
                 <div class="nav-icons">
-                    <img src="assets/img/Icon ionic-ios-settings.svg">
-                    <img src="assets/img/Icon material-notifications-active.svg">
+                    <img src="assets/img/Icon ionic-ios-settings.svg" alt="Configuración">
+                    <img src="assets/img/Icon material-notifications-active.svg" alt="Notificaciones">
                     <div class="user-avatar">
-                        <img src="assets/img/pp.png">
+                        <img src="assets/img/pp.png" alt="Avatar">
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
 
-    
+    <main class="container">
+        <section class="report-container">
+            <form action="/submit-report" method="POST" class="report-form">
+                
+                <!-- Información de Contacto -->
+                <div class="form-section">
+                    <div class="contact-info">
+                        <h3>📞 Contacto - Kario Media</h3>
+                        <p><strong>Email:</strong> soporte@kariomedia.com</p>
+                        <p><strong>Teléfono:</strong> +57 (7) 6892234</p>
+                        <p><strong>Dirección:</strong> Cra. 45 #23-19, Bucaramanga, Santander</p>
+                        <p><strong>Horario:</strong> Lunes - Viernes 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Información del Usuario -->
+                <div class="form-section">
+                    <h4 class="form-section-title">Información Personal</h4>
+                    
+                    <div class="form-row">
+                        <div>
+                            <label for="fullname">Nombre Completo *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div>
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+57 300 123 4567" required>
+                        </div>
+                        <div>
+                            <label for="department">Departamento *</label>
+                            <select id="department" name="department" required>
+                                <option value="" disabled selected>Selecciona tu departamento</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="design">Diseño</option>
+                                <option value="developers">Developers</option>
+                                <option value="gerencia">Gerencia</option>
+                                <option value="produccion">Producción</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalles del Reporte -->
+                <div class="form-section">
+                    <h4 class="form-section-title">Detalles del Reporte</h4>
+                    
+                    <div class="form-row full">
+                        <div>
+                            <label for="problem-type">Tipo de Problema *</label>
+                            <select id="problem-type" name="problem-type" required>
+                                <option value="" disabled selected>Selecciona un tipo</option>
+                                <option value="error">Error Técnico</option>
+                                <option value="sugerencia">Sugerencia de Mejora</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row full">
+                        <div>
+                            <label for="priority">Prioridad *</label>
+                            <select id="priority" name="priority" required>
+                                <option value="" disabled selected>Selecciona la prioridad</option>
+                                <option value="baja">Baja</option>
+                                <option value="media">Media</option>
+                                <option value="alta">Alta</option>
+                                <option value="critica">Crítica</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row full">
+                        <div>
+                            <label for="description">Descripción del Problema *</label>
+                            <textarea id="description" name="description" placeholder="Describe detalladamente el problema o sugerencia..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row full">
+                        <div>
+                            <label for="steps">Pasos para Reproducir (si aplica)</label>
+                            <textarea id="steps" name="steps" placeholder="Ej: 1. Haz clic en... 2. Luego..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit">Enviar Reporte</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

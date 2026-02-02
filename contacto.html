@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Kario Media</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link rel="stylesheet" href="style/utilities.css">
+</head>
+<body>
+
+    <header class="top-nav-container">
+        <div class="top-nav">
+            <div class="nav-left">
+                <div class="nav-item">
+                    <img src="assets/img/interrogative.png" alt="Contacto"> Contacto
+                </div>
+            </div>
+
+            <div class="logo-placeholder">
+                <img src="assets/img/kario sin kairo.svg" alt="Kario Logo">
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <img src="assets/img/Icon ionic-ios-settings.svg" alt="Configuración">
+                    <img src="assets/img/Icon material-notifications-active.svg" alt="Notificaciones">
+                    <div class="user-avatar">
+                        <img src="assets/img/pp.png" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-container">
+
+            <form action="/submit-contact" method="POST" class="contact-form">
+
+                <!-- Información de Contacto -->
+                <div class="form-section">
+                    <div class="contact-info">
+                        <h3>📞 Necesitas ayuda? </h3>
+                        <p><strong>Email:</strong> soporte@kariomedia.com</p>
+                        <p><strong>Teléfono:</strong> +57 (7) 6892234</p>
+                        <p><strong>Dirección:</strong> Cra. 45 #23-19, Bucaramanga, Santander</p>
+                        <p><strong>Horario:</strong> Lunes - Viernes 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Datos del Usuario -->
+                <div class="form-section">
+                    <h4 class="form-section-title">Información Personal</h4>
+
+                    <div class="form-row">
+                        <div>
+                            <label for="fullname">Nombre Completo *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div>
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+57 300 123 4567" required>
+                        </div>
+                        <div>
+                            <label for="subject">Asunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="soporte">Soporte</option>
+                                <option value="cotizacion">Cotización</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="form-section">
+                    <h4 class="form-section-title">Mensaje</h4>
+
+                    <div class="form-row full">
+                        <div>
+                            <label for="message">Mensaje *</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Escribe tu mensaje aquí..."
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón -->
+                <button type="submit">Enviar Mensaje</button>
+
+            </form>
+
+        </section>
+    </main>
+
+</body>
+</html>

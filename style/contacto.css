@@ -1,5 +1,5 @@
 /* =========================================
-   ESTILOS DE LA PÁGINA DE REPORTE
+   ESTILO DE LA PÁGINA DE CONTACTO
 ========================================= */
 
 /* ========= 1) HEADER ========= */
@@ -7,39 +7,39 @@
     width: 100%;
     background: #fff;
     border-bottom: 2px solid #d9d9d9;
-  }
-  
-  .top-nav {
+}
+
+.top-nav {
     max-width: 1180px;
     margin: 0 auto;
     padding: 8px 12px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-  }
-  
-  /* Grupo izquierdo */
-  .nav-left {
+}
+
+/* Grupo izquierdo */
+.nav-left {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 56px;
-  }
-  
-  /* Grupo derecho */
-  .nav-right {
+}
+
+/* Grupo derecho */
+.nav-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 46px;
-  }
-  
-  .logo-placeholder img {
+}
+
+.logo-placeholder img {
     height: 26px;
-  }
-  
-  /* Items del header */
-  .nav-item {
+}
+
+/* Items del header */
+.nav-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -48,33 +48,33 @@
     color: #333;
     cursor: pointer;
     white-space: nowrap;
-  }
-  
-  .nav-item img {
+}
+
+.nav-item img {
     width: 22px;
     height: 22px;
-  }
-  
-  /* Íconos derecha */
-  .nav-icons {
+}
+
+/* Íconos derecha */
+.nav-icons {
     display: flex;
     align-items: center;
     gap: 14px;
-  }
-  
-  .nav-icons img {
+}
+
+.nav-icons img {
     width: 20px;
     height: 20px;
-  }
-  
-  .user-avatar img {
+}
+
+.user-avatar img {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-  }
+}
 
-/* ========= 2) REPORTE DE INDICADORES ========= */
-.report-container {
+/* ========= 2) CONTACTO ========= */
+.contact-container {
     max-width: 1180px;
     margin: 20px auto;
     padding: 20px 12px;
@@ -84,7 +84,7 @@
     min-height: 70vh;
 }
 
-.report-form {
+.contact-form {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -96,7 +96,7 @@
     transition: box-shadow 0.3s ease;
 }
 
-.report-form:hover {
+.contact-form:hover {
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
 }
 
@@ -145,7 +145,7 @@
     grid-template-columns: 1fr;
 }
 
-.report-form label {
+.contact-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
@@ -153,9 +153,50 @@
     font-size: 14px;
 }
 
-.report-form input,
-.report-form select,
-.report-form textarea {
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    transition: color 0.3s;
+}
+
+/* Animación del Select */
+select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Curva suave */
+    animation: fadeInSlide 0.5s ease forwards;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+select:hover {
+    border-color: #bbb;
+    transform: translateY(-1px);
+    background-color: #f3d8c7;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+
+}
+
+/* Animación de entrada (Keyframes) */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
     width: 100%;
     padding: 12px;
     border: 1.5px solid #ddd;
@@ -165,21 +206,21 @@
     font-family: inherit;
 }
 
-.report-form input:focus,
-.report-form select:focus,
-.report-form textarea:focus {
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
     border-color: #d66c36;
     outline: none;
     background-color: #fff;
     box-shadow: 0 0 0 3px rgba(214, 108, 54, 0.1);
 }
 
-.report-form textarea {
+.contact-form textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 120px;
 }
 
-.report-form button {
+.contact-form button {
     width: 100%;
     padding: 14px;
     margin-top: 10px;
@@ -193,17 +234,17 @@
     transition: all 0.3s ease;
 }
 
-.report-form button:hover {
+.contact-form button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(214, 108, 54, 0.3);
 }
 
-.report-form button:active {
+.contact-form button:active {
     transform: translateY(0);
 }
 
 /* Fade-in animation */
-@keyframes fadeInReporte {
+@keyframes fadeInContacto {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -215,5 +256,5 @@
 }
 
 .container {
-    animation: fadeInReporte 0.8s ease-in-out;
+    animation: fadeInContacto 0.8s ease-in-out;
 }
