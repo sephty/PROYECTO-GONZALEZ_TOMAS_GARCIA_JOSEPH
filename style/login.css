@@ -1,6 +1,12 @@
+/* =========================================
+   ESTILOS DE INICIO DE SESIÓN (LOGIN)
+========================================= */
+
+/* ========= 1) CUERPO Y FONDO ========= */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: black;
+    /* Fondo de pantalla completa con imagen de alta resolución */
     background-image: url('../assets/img/pexels-pixabay-159400.png');
     background-size: cover;
     background-position: center;
@@ -9,9 +15,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; /* Evita el scroll durante las animaciones */
 }
 
+/* ========= 2) CONTENEDORES PRINCIPALES ========= */
 .container {
     position: relative;
     width: 100%;
@@ -21,30 +28,36 @@ body {
     align-items: center;
 }
 
+/* Tarjeta blanca del formulario de login */
 .login-container {
-    opacity: 0;
+    opacity: 0; /* Inicia oculto para la animación */
     background: #f5f5f5;
     padding: 3rem 2.5rem;
     border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 600px;
+    /* Aparece después de que termina la secuencia del logo (3s) */
     animation: fadeInForm 0.3s ease-in 3s forwards;
     transition: opacity 0.5s ease, visibility 0.3s ease;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
+/* ========= 3) LOGOS Y ENCABEZADO ========= */
 .logo-container {
     position: absolute;
     text-align: center;
+    /* Controla la aparición y desaparición inicial del logo naranja */
     animation: logoSequence 2.7s ease-in-out forwards;
 }
 
-.logo-image { width: 120px; height: 120px; margin: 0 auto 1rem; object-fit: contain; }
+.logo-image { 
+    width: 120px; 
+    height: 120px; 
+    margin: 0 auto 1rem; 
+    object-fit: contain; 
+}
 
+/* Logo dentro del formulario blanco */
 .login-logo-image {
     width: 100px; 
     height: auto;
@@ -60,13 +73,41 @@ body {
     margin-top: 5px;
 }
 
-.login-header { text-align: center; margin-bottom: 2rem; }
-.login-title { font-size: 1.5rem; font-weight: 600; color: #333; margin-bottom: 0.5rem; line-height: 1.4; }
-.login-subtitle { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+.login-header { 
+    text-align: center; 
+    margin-bottom: 2rem; 
+}
 
-label { display: block; margin-bottom: 0.5rem; color: #666; font-weight: 500; font-size: 0.95rem; }
+.login-title { 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: #333; 
+    margin-bottom: 0.5rem; 
+    line-height: 1.4; 
+}
 
-input[type="text"], input[type="password"] {
+.login-subtitle { 
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-bottom: 2rem; 
+}
+
+/* ========= 4) CAMPOS DEL FORMULARIO ========= */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    color: #666; 
+    font-weight: 500; 
+    font-size: 0.95rem; 
+}
+
+/* Estilo de los inputs redondeados */
+input[type="text"], 
+input[type="password"] {
     width: calc(100% - 2.4rem); 
     max-width: 100%; 
     padding: 1rem 1.2rem;
@@ -77,12 +118,14 @@ input[type="text"], input[type="password"] {
     box-sizing: border-box; 
 }
 
+/* Efecto al hacer click */
 input:focus {
     outline: none;
     border-color: #eb4b16;
     box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
 }
 
+/* ========= 5) BOTONES Y ACCIONES ========= */
 .btn-login {
     display: block; 
     margin: 1.5rem auto 0;
@@ -105,5 +148,9 @@ input:focus {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.help-text { text-align: center; margin-top: 1.5rem; color: #999; font-size: 0.85rem; }
-
+.help-text { 
+    text-align: center; 
+    margin-top: 1.5rem; 
+    color: #999; 
+    font-size: 0.85rem; 
+}

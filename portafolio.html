@@ -5,159 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Indicadores</title>
     <link rel="stylesheet" href="style/components.css">
+    <link rel="stylesheet" href="style/utilities.css">
 </head>
 <body>
 
-<input type="checkbox" id="menu-check">
-
-<header class="top-nav-container">
-    <div class="top-nav">
-
-        <div class="nav-left">
-            <div class="nav-item"><img src="assets/img/Group 3.svg"> Añadir</div>
-            <div class="nav-item"><img src="assets/img/Icon open-reload.svg"> Refrescar</div>
-            <div class="nav-item"><img src="assets/img/Icon material-delete-forever.svg"> Eliminar</div>
-        </div>
-
-        <div class="logo-placeholder">
-            <img src="assets/img/kario sin kairo.svg">
-        </div>
-
-        <div class="nav-right">
-            <div class="nav-item"><img src="assets/img/Icon material-bug-report.svg"> Reportar</div>
-            <div class="nav-item"><img src="assets/img/interrogative.png"> Ayuda</div>
-
-            <div class="nav-icons">
-                <img src="assets/img/Icon ionic-ios-settings.svg">
-                <img src="assets/img/Icon material-notifications-active.svg">
-                <div class="user-avatar">
-                    <img src="assets/img/pp.png">
+    <div class="startup-screen" id="startupScreen">
+        <div class="startup-content">
+            <div class="startup-logo">
+                <img src="assets/img/kario sin kairo.svg" alt="Media Logo">
+                <div class="media-text">
+                    MEDIA
                 </div>
             </div>
-        </div>
-
-    </div>
-</header>
-
-<main class="container">
-
-    <section class="title-section">
-        <h1>Panel de Indicadores</h1>
-        <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
-    </section>
-
-    <div class="kpi-table">
-        <div class="kpi-header">
-            <div>Indicador</div>
-            <div>Descripción</div>
-            <div class="center">Categoría</div>
-            <div class="center">Fecha de Inicio</div>
-            <div class="center">Fecha de Terminación</div>
-            <div class="center">Fórmula</div>
-            <div class="center">Frecuencia</div>
-            <div class="center">Cumplimiento</div>
-            <div class="center">Área</div>
-            <div></div>
-        </div>
-
-        <div class="kpi-row">
-            <div class="bold">Modelado 3D</div>
-            <div class="muted ellipsis">Interés por dise.........</div>
-            <div class="center muted">Baja</div>
-            <div class="center muted">12/05/21</div>
-            <div class="center muted">12/12/21</div>
-            <div class="center muted">Met.Ágil</div>
-            <div class="center muted">1/4</div>
-            <div class="center">
-            <span class="ring ring-red"><span>31%</span></span>
+            <h1 class="startup-title">Bienvenido de nuevo</h1>
+            <div class="startup-avatar">
+                <img src="assets/img/pp@2x.png" alt="Avatar">
             </div>
-            <div class="center muted">Marketing</div>
-            <div class="actions">☰</div>
+            <h2 class="startup-name">Pedro Felipe Gómez Bonilla</h2>
+            <p class="startup-role">Usuario Administrador</p>
         </div>
 
-        <div class="kpi-row">
-            <div class="bold">Finca Galeón</div>
-            <div class="muted ellipsis">Diseño de maque.......</div>
-            <div class="center muted">Baja</div>
-            <div class="center muted">12/04/21</div>
-            <div class="center muted">12/05/21</div>
-            <div class="center muted">Met.Ágil</div>
-            <div class="center muted">1/4</div>
-            <div class="center">
-            <span class="ring ring-red"><span>25%</span></span>
-            </div>
-            <div class="center muted">Diseño</div>
-            <div class="actions">☰</div>
-        </div>
-
-        <div class="kpi-row">
-            <div class="bold">Colegios Privados</div>
-            <div class="muted ellipsis">Se busca llegar a los....</div>
-            <div class="center muted">Media</div>
-            <div class="center muted">24/04/21</div>
-            <div class="center muted">12/11/21</div>
-            <div class="center muted">Met.Fibo</div>
-            <div class="center muted">1/4</div>
-            <div class="center">
-            <span class="ring ring-green"><span>80%</span></span>
-            </div>
-            <div class="center muted">Developers</div>
-            <div class="actions">☰</div>
-        </div>
-
-        <div class="kpi-row">
-            <div class="bold">Electrodomésticos</div>
-            <div class="muted ellipsis">Ventas de electro......</div>
-            <div class="center muted">Media</div>
-            <div class="center muted">12/04/21</div>
-            <div class="center muted">12/09/21</div>
-            <div class="center muted">N/A</div>
-            <div class="center muted">1/3</div>
-            <div class="center">
-            <span class="ring ring-red"><span>32%</span></span>
-            </div>
-            <div class="center muted">Gerencia</div>
-            <div class="actions">☰</div>
-        </div>
-
-        <div class="kpi-row">
-            <div class="bold">Estrato 2 - Floridablanca</div>
-            <div class="muted ellipsis">Impacto en los sec.....</div>
-            <div class="center muted">Alta</div>
-            <div class="center muted">12/04/21</div>
-            <div class="center muted">12/09/21</div>
-            <div class="center muted">Met.Expo</div>
-            <div class="center muted">1/4</div>
-            <div class="center">
-            <span class="ring ring-green"><span>95%</span></span>
-            </div>
-            <div class="center muted">Marketing</div>
-            <div class="actions">☰</div>
-        </div>
-
-        <div class="kpi-row">
-            <div class="bold">Jóvenes en Acción</div>
-            <div class="muted ellipsis">Impacto en los sec.....</div>
-            <div class="center muted">Alta</div>
-            <div class="center muted">15/02/21</div>
-            <div class="center muted">09/11/21</div>
-            <div class="center muted">Met.Expo</div>
-            <div class="center muted">1/2</div>
-            <div class="center">
-            <span class="ring ring-orange"><span>75%</span></span>
-            </div>
-            <div class="center muted">Producción</div>
-            <div class="actions">☰</div>
+        <div class="logoMain-container">
+            <img src="assets/img/kario sin kairo.svg" alt="Kario Logo" class="logo-image">
         </div>
     </div>
 
-    </div>
+<div class="main-wrapper" id="mainWrapper">
+    <input type="checkbox" id="menu-check">
 
-    <div class="footer-actions">
-        <button class="btn-main">Añadir Elementos</button>
-    </div>
+    <header class="top-nav-container">
+        <div class="top-nav">
 
-</main>
+            <div class="nav-left">
+                <div class="nav-item"><img src="assets/img/Group 3.svg"> Añadir</div>
+                <div class="nav-item"><img src="assets/img/Icon open-reload.svg"> Refrescar</div>
+                <div class="nav-item"><img src="assets/img/Icon material-delete-forever.svg"> Eliminar</div>
+            </div>
+
+            <div class="logo-placeholder">
+                <img src="assets/img/kario sin kairo.svg">
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-item"><img src="assets/img/Icon material-bug-report.svg"> Reportar</div>
+                <div class="nav-item"><img src="assets/img/interrogative.png"> Ayuda</div>
+
+                <div class="nav-icons">
+                    <img src="assets/img/Icon ionic-ios-settings.svg">
+                    <img src="assets/img/Icon material-notifications-active.svg">
+                    <div class="user-avatar">
+                        <img src="assets/img/pp.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="title-section">
+            <h1>Panel de Indicadores</h1>
+            <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
+        </section>
+
+        <div class="kpi-table">
+            <div class="kpi-header">
+                <div>Indicador</div>
+                <div>Descripción</div>
+                <div class="center">Categoría</div>
+                <div class="center">Fecha de Inicio</div>
+                <div class="center">Fecha de Terminación</div>
+                <div class="center">Fórmula</div>
+                <div class="center">Frecuencia</div>
+                <div class="center">Cumplimiento</div>
+                <div class="center">Área</div>
+                <div></div>
+            </div>
+
+            <div class="kpi-row">
+                <div class="bold">Modelado 3D</div>
+                <div class="muted ellipsis">Interés por dise.........</div>
+                <div class="center muted">Baja</div>
+                <div class="center muted">12/05/21</div>
+                <div class="center muted">12/12/21</div>
+                <div class="center muted">Met.Ágil</div>
+                <div class="center muted">1/4</div>
+                <div class="center">
+                <span class="ring ring-red"><span>31%</span></span>
+                </div>
+                <div class="center muted">Marketing</div>
+                <div class="actions">☰</div>
+            </div>
+
+            <div class="kpi-row">
+                <div class="bold">Finca Galeón</div>
+                <div class="muted ellipsis">Diseño de maque.......</div>
+                <div class="center muted">Baja</div>
+                <div class="center muted">12/04/21</div>
+                <div class="center muted">12/05/21</div>
+                <div class="center muted">Met.Ágil</div>
+                <div class="center muted">1/4</div>
+                <div class="center">
+                <span class="ring ring-red"><span>25%</span></span>
+                </div>
+                <div class="center muted">Diseño</div>
+                <div class="actions">☰</div>
+            </div>
+
+            <div class="kpi-row">
+                <div class="bold">Colegios Privados</div>
+                <div class="muted ellipsis">Se busca llegar a los....</div>
+                <div class="center muted">Media</div>
+                <div class="center muted">24/04/21</div>
+                <div class="center muted">12/11/21</div>
+                <div class="center muted">Met.Fibo</div>
+                <div class="center muted">1/4</div>
+                <div class="center">
+                <span class="ring ring-green"><span>80%</span></span>
+                </div>
+                <div class="center muted">Developers</div>
+                <div class="actions">☰</div>
+            </div>
+
+            <div class="kpi-row">
+                <div class="bold">Electrodomésticos</div>
+                <div class="muted ellipsis">Ventas de electro......</div>
+                <div class="center muted">Media</div>
+                <div class="center muted">12/04/21</div>
+                <div class="center muted">12/09/21</div>
+                <div class="center muted">N/A</div>
+                <div class="center muted">1/3</div>
+                <div class="center">
+                <span class="ring ring-red"><span>32%</span></span>
+                </div>
+                <div class="center muted">Gerencia</div>
+                <div class="actions">☰</div>
+            </div>
+
+            <div class="kpi-row">
+                <div class="bold">Estrato 2 - Floridablanca</div>
+                <div class="muted ellipsis">Impacto en los sec.....</div>
+                <div class="center muted">Alta</div>
+                <div class="center muted">12/04/21</div>
+                <div class="center muted">12/09/21</div>
+                <div class="center muted">Met.Expo</div>
+                <div class="center muted">1/4</div>
+                <div class="center">
+                <span class="ring ring-green"><span>95%</span></span>
+                </div>
+                <div class="center muted">Marketing</div>
+                <div class="actions">☰</div>
+            </div>
+
+            <div class="kpi-row">
+                <div class="bold">Jóvenes en Acción</div>
+                <div class="muted ellipsis">Impacto en los sec.....</div>
+                <div class="center muted">Alta</div>
+                <div class="center muted">15/02/21</div>
+                <div class="center muted">09/11/21</div>
+                <div class="center muted">Met.Expo</div>
+                <div class="center muted">1/2</div>
+                <div class="center">
+                <span class="ring ring-orange"><span>75%</span></span>
+                </div>
+                <div class="center muted">Producción</div>
+                <div class="actions">☰</div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer-actions">
+            <button class="btn-main">Añadir Elementos</button>
+        </div>
+
+    </main>
+</div>
 
 </body>
 </html>
