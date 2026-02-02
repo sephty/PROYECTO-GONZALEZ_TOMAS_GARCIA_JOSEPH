@@ -1,293 +1,227 @@
 /* =========================================
-   1. RESET Y BASES (Pixel Perfect)
-   ========================================= */
+   PANEL DE INDICADORES — CSS LIMPIO
+========================================= */
+
+/* ========= 1) RESET ========= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    overflow-x: hidden;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
 }
 
-/* Escondemos el checkbox que controlará el menú móvil */
-#menu-check {
-    display: none;
+/* ========= 2) HEADER ========= */
+.top-nav-container {
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px solid #d9d9d9;
 }
 
-/* =========================================
-   2. HEADER / NAVEGACIÓN
-   ========================================= */
 .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    border-bottom: 1px solid #f2f2f2;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 }
 
-.nav-left, .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+/* Grupo izquierdo */
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 56px;
 }
 
-.nav-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.2s;
+/* Grupo derecho */
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 46px;
 }
 
-.nav-item:hover { opacity: 0.7; }
-
-/* Iconos parejos del menú */
-.nav-item img {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-}
-
-.orange-text { color: #FF6600; }
-
-/* Logo Central (Más grande) */
 .logo-placeholder img {
-    height: 40px;
-    width: auto;
+  height: 26px;
 }
 
+/* Items del header */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-item img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Íconos derecha */
 .nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .nav-icons img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .user-avatar img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 
-/* Botón Hamburguesa (Oculto en Desktop) */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: #FF6600;
-    border-radius: 5px;
-}
-
-/* =========================================
-   3. CONTENIDO PRINCIPAL Y TABLA
-   ========================================= */
+/* ========= 3) CONTENEDOR ========= */
 .container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 38px 12px 60px;
 }
 
 .title-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 26px;
 }
 
 .title-section h1 {
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 10px;
+  font-size: 34px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 .title-section p {
-    color: #888;
-    font-size: 15px;
+  font-size: 13px;
+  color: #777;
 }
 
-/* Cabecera de tabla */
-.table-header {
-    display: flex;
-    padding: 10px 40px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #444;
-    margin-bottom: 10px;
+/* ========= 4) TABLA ========= */
+.kpi-header {
+  display: grid;
+  grid-template-columns: 180px 250px 90px 120px 160px 100px 90px 130px 120px 40px;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
 }
 
-/* Filas tipo cápsula */
-.table-row {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border: 1px solid #CCCCCC;
-    border-radius: 50px;
-    padding: 12px 30px;
-    margin-bottom: 15px;
-    font-size: 13px;
-    position: relative;
-    transition: transform 0.2s, box-shadow 0.2s;
+.kpi-row {
+  display: grid;
+  grid-template-columns: 180px 250px 90px 120px 160px 100px 90px 130px 120px 40px;
+  align-items: center;
+  margin: 14px 0;
+  padding: 18px 0;
+  background: #fff;
+  border: 2px solid #c7c7c7;
+  border-radius: 999px;
 }
 
-.table-row:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* Padding interno */
+.kpi-header > div,
+.kpi-row > div {
+  padding: 0 18px;
 }
 
-/* Columnas (Flex Proportions) */
-.col-indicador { flex: 1.5; font-weight: 600; }
-.col-descripcion { flex: 2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.col-categoria { flex: 0.8; text-align: center; }
-.col-fecha { flex: 1.2; text-align: center; }
-.col-formula { flex: 1; text-align: center; }
-.col-frecuencia { flex: 0.8; text-align: center; }
-.col-cumplimiento { flex: 1; display: flex; justify-content: center; }
-.col-area { flex: 1; text-align: center; }
-
-/* El icono de hamburguesa queda FUERA de la cápsula visualmente */
-.col-actions {
-    position: absolute;
-    right: -35px;
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
+/* Texto */
+.bold {
+  font-weight: 700;
+  color: #333;
 }
 
-.gray-text { color: #888; }
-
-/* =========================================
-   4. CÍRCULOS DE PROGRESO (90% Efecto)
-   ========================================= */
-.progress-circle {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: bold;
-    border: 3px solid transparent;
-    position: relative;
+.muted {
+  color: #777;
 }
 
-/* Pseudo-elemento para el borde incompleto */
-.progress-circle::before {
-    content: '';
-    position: absolute;
-    top: -3px; left: -3px; right: -3px; bottom: -3px;
-    border-radius: 50%;
-    border: 3px solid;
-    /* Esto crea la apertura del 10% arriba */
-    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 20%);
-    transform: rotate(-10deg);
+.center {
+  text-align: center;
+  justify-self: center;
 }
 
-.progress-circle.red::before { border-color: #E74C3C; }
-.progress-circle.green::before { border-color: #2ECC71; }
-.progress-circle.orange::before { border-color: #F39C12; }
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-/* =========================================
-   5. BOTÓN INFERIOR
-   ========================================= */
+/* Menú hamburguesa */
+.actions {
+  justify-self: center;
+  font-size: 28px;
+  line-height: 1;
+  color: #111;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+/* ========= 5) CÍRCULO DE CUMPLIMIENTO ========= */
+.ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  mask: radial-gradient(farthest-side, transparent 62%, #000 63%);
+  -webkit-mask: radial-gradient(farthest-side, transparent 62%, #000 63%);
+}
+
+.ring span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #666;
+  position: relative;
+  z-index: 1;
+}
+
+.ring-red::before {
+  background: conic-gradient(#ff1f1f 0 320deg, transparent 320deg 360deg);
+}
+
+.ring-green::before {
+  background: conic-gradient(#25c64a 0 320deg, transparent 320deg 360deg);
+}
+
+.ring-orange::before {
+  background: conic-gradient(#f5a623 0 320deg, transparent 320deg 360deg);
+}
+
+/* ========= 6) BOTÓN ========= */
 .footer-actions {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
 }
 
 .btn-main {
-    background-color: #FF6600;
-    color: white;
-    border: none;
-    padding: 15px 60px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
-}
-
-/* =========================================
-   6. MEDIA QUERIES (ANDROID / IPHONE)
-   ========================================= */
-@media (max-width: 992px) {
-    /* Mostramos botón hamburguesa */
-    .menu-toggle { display: flex; }
-
-    /* Ajuste del header */
-    .top-nav { padding: 10px 20px; }
-
-    /* Los menús se vuelven un desplegable */
-    .nav-left, .nav-right {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 65px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 20px;
-        border-bottom: 2px solid #FF6600;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-
-    /* Mostrar menú al activar checkbox */
-    #menu-check:checked ~ .top-nav .nav-left,
-    #menu-check:checked ~ .top-nav .nav-right {
-        display: flex;
-    }
-
-    /* Tabla a Tarjetas */
-    .table-header { display: none; }
-
-    .table-row {
-        flex-direction: column;
-        align-items: flex-start;
-        border-radius: 20px;
-        padding: 20px;
-        gap: 12px;
-        margin-right: 40px; /* Espacio para el icono de fuera */
-    }
-
-    .table-row div {
-        width: 100%;
-        text-align: left !important;
-    }
-
-    /* Labels para identificar datos en móvil */
-    .table-row div::before {
-        content: attr(data-label) ": ";
-        font-weight: bold;
-        color: #333;
-        margin-right: 5px;
-    }
-
-    .col-actions {
-        right: -35px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .col-cumplimiento { justify-content: flex-start; }
-    .col-cumplimiento::before { margin-bottom: 10px; }
+  background: #ff6a00;
+  border: none;
+  color: #fff;
+  padding: 16px 90px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
 }

@@ -7,142 +7,157 @@
     <link rel="stylesheet" href="style/components.css">
 </head>
 <body>
-    <input type="checkbox" id="menu-check">
-    <header class="top-nav">
+
+<input type="checkbox" id="menu-check">
+
+<header class="top-nav-container">
+    <div class="top-nav">
+
         <div class="nav-left">
-            <div class="nav-item orange-text"><img src="assets/img/Group 3.svg" alt=""> Añadir</div>
-            <div class="nav-item orange-text"><img src="assets/img/Icon open-reload.svg" alt=""> Refrescar</div>
-            <div class="nav-item orange-text"><img src="assets/img/Icon material-delete-forever.svg" alt=""> Eliminar</div>
+            <div class="nav-item"><img src="assets/img/Group 3.svg"> Añadir</div>
+            <div class="nav-item"><img src="assets/img/Icon open-reload.svg"> Refrescar</div>
+            <div class="nav-item"><img src="assets/img/Icon material-delete-forever.svg"> Eliminar</div>
         </div>
-        <div class="nav-center">
-            <div class="logo-placeholder"><img src="assets/img/kario sin kairo.svg" alt=""></div>
+
+        <div class="logo-placeholder">
+            <img src="assets/img/kario sin kairo.svg">
         </div>
+
         <div class="nav-right">
-            <div class="nav-item orange-text"><img src="assets/img/Icon material-bug-report.svg" alt=""> Reportar</div>
-            <div class="nav-item orange-text"><img src="assets/img/interrogative.png" alt=""> Ayuda</div>
+            <div class="nav-item"><img src="assets/img/Icon material-bug-report.svg"> Reportar</div>
+            <div class="nav-item"><img src="assets/img/interrogative.png"> Ayuda</div>
+
             <div class="nav-icons">
-                <span class="icon-settings"><img src="assets/img/Icon ionic-ios-settings.svg" alt=""></span>
-                <span class="icon-bell"><img src="assets/img/Icon material-notifications-active.svg" alt=""></span>
-                <div class="user-avatar"><img src="assets/img/pp.png" alt=""></div>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <section class="title-section">
-            <h1>Panel de Indicadores</h1>
-            <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
-        </section>
-
-        <div class="table-header">
-            <div class="col-indicador">Indicador</div>
-            <div class="col-descripcion">Descripción</div>
-            <div class="col-categoria">Categoría</div>
-            <div class="col-fecha">Fecha de Inicio</div>
-            <div class="col-fecha">Fecha de Terminación</div>
-            <div class="col-formula">Fórmula</div>
-            <div class="col-frecuencia">Frecuencia</div>
-            <div class="col-cumplimiento">Cumplimiento</div>
-            <div class="col-area">Área</div>
-            <div class="col-actions"></div>
-        </div>
-
-        <div class="table-body">
-            <div class="table-row">
-                <div class="col-indicador">Modelado 3D</div>
-                <div class="col-descripcion gray-text">Interés por dise.........</div>
-                <div class="col-categoria gray-text">Baja</div>
-                <div class="col-fecha gray-text">12/05/21</div>
-                <div class="col-fecha gray-text">12/12/21</div>
-                <div class="col-formula gray-text">Met.Ágil</div>
-                <div class="col-frecuencia gray-text">1/4</div>
-                <div class="col-cumplimiento">
-                    <div class="progress-circle red">31%</div>
+                <img src="assets/img/Icon ionic-ios-settings.svg">
+                <img src="assets/img/Icon material-notifications-active.svg">
+                <div class="user-avatar">
+                    <img src="assets/img/pp.png">
                 </div>
-                <div class="col-area gray-text">Marketing</div>
-                <div class="col-actions">☰</div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-indicador">Finca Galeón</div>
-                <div class="col-descripcion gray-text">Diseño de maque.......</div>
-                <div class="col-categoria gray-text">Baja</div>
-                <div class="col-fecha gray-text">12/04/21</div>
-                <div class="col-fecha gray-text">12/05/21</div>
-                <div class="col-formula gray-text">Met.Ágil</div>
-                <div class="col-frecuencia gray-text">1/4</div>
-                <div class="col-cumplimiento">
-                    <div class="progress-circle red">25%</div>
-                </div>
-                <div class="col-area gray-text">Diseño</div>
-                <div class="col-actions">☰</div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-indicador">Colegios Privados</div>
-                <div class="col-descripcion gray-text">Se busca llegar a los....</div>
-                <div class="col-categoria gray-text">Media</div>
-                <div class="col-fecha gray-text">24/04/21</div>
-                <div class="col-fecha gray-text">12/11/21</div>
-                <div class="col-formula gray-text">Met.Fibo</div>
-                <div class="col-frecuencia gray-text">1/4</div>
-                <div class="col-cumplimiento">
-                    <div class="progress-circle green">80%</div>
-                </div>
-                <div class="col-area gray-text">Developers</div>
-                <div class="col-actions">☰</div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-indicador">Electrodomésticos</div>
-                <div class="col-descripcion gray-text">Ventas de electro......</div>
-                <div class="col-categoria gray-text">Media</div>
-                <div class="col-fecha gray-text">12/04/21</div>
-                <div class="col-fecha gray-text">12/09/21</div>
-                <div class="col-formula gray-text">N/A</div>
-                <div class="col-frecuencia gray-text">1/3</div>
-                <div class="col-cumplimiento">
-                    <div class="progress-circle red">32%</div>
-                </div>
-                <div class="col-area gray-text">Gerencia</div>
-                <div class="col-actions">☰</div>
-            </div>
-            
-            <div class="table-row">
-                <div class="col-indicador">Estrato 2 - Floridablanca</div>
-                <div class="col-descripcion gray-text">Impacto en los sec.....</div>
-                <div class="col-categoria gray-text">Alta</div>
-                <div class="col-fecha gray-text">12/04/21</div>
-                <div class="col-fecha gray-text">12/09/21</div>
-                <div class="col-formula gray-text">Met.Expo</div>
-                <div class="col-frecuencia gray-text">1/4</div>
-                <div class="col-cumplimiento">
-                    <div class="progress-circle green">95%</div>
-                </div>
-                <div class="col-area gray-text">Marketing</div>
-                <div class="col-actions">☰</div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-indicador">Jóvenes en Acción</div>
-                <div class="col-descripcion gray-text">Impacto en los sec.....</div>
-                <div class="col-categoria gray-text">Alta</div>
-                <div class="col-fecha gray-text">15/02/21</div>
-                <div class="col-fecha gray-text">09/11/21</div>
-                <div class="col-formula gray-text">Met.Expo</div>
-                <div class="col-frecuencia gray-text">1/2</div>
-                <div class="col-cumplimiento">
-                    <div class="progress-circle orange">75%</div>
-                </div>
-                <div class="col-area gray-text">Producción</div>
-                <div class="col-actions">☰</div>
             </div>
         </div>
 
-        <div class="footer-actions">
-            <button class="btn-main">Añadir Elementos</button>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="title-section">
+        <h1>Panel de Indicadores</h1>
+        <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
+    </section>
+
+    <div class="kpi-table">
+        <div class="kpi-header">
+            <div>Indicador</div>
+            <div>Descripción</div>
+            <div class="center">Categoría</div>
+            <div class="center">Fecha de Inicio</div>
+            <div class="center">Fecha de Terminación</div>
+            <div class="center">Fórmula</div>
+            <div class="center">Frecuencia</div>
+            <div class="center">Cumplimiento</div>
+            <div class="center">Área</div>
+            <div></div>
         </div>
-    </main>
+
+        <div class="kpi-row">
+            <div class="bold">Modelado 3D</div>
+            <div class="muted ellipsis">Interés por dise.........</div>
+            <div class="center muted">Baja</div>
+            <div class="center muted">12/05/21</div>
+            <div class="center muted">12/12/21</div>
+            <div class="center muted">Met.Ágil</div>
+            <div class="center muted">1/4</div>
+            <div class="center">
+            <span class="ring ring-red"><span>31%</span></span>
+            </div>
+            <div class="center muted">Marketing</div>
+            <div class="actions">☰</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="bold">Finca Galeón</div>
+            <div class="muted ellipsis">Diseño de maque.......</div>
+            <div class="center muted">Baja</div>
+            <div class="center muted">12/04/21</div>
+            <div class="center muted">12/05/21</div>
+            <div class="center muted">Met.Ágil</div>
+            <div class="center muted">1/4</div>
+            <div class="center">
+            <span class="ring ring-red"><span>25%</span></span>
+            </div>
+            <div class="center muted">Diseño</div>
+            <div class="actions">☰</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="bold">Colegios Privados</div>
+            <div class="muted ellipsis">Se busca llegar a los....</div>
+            <div class="center muted">Media</div>
+            <div class="center muted">24/04/21</div>
+            <div class="center muted">12/11/21</div>
+            <div class="center muted">Met.Fibo</div>
+            <div class="center muted">1/4</div>
+            <div class="center">
+            <span class="ring ring-green"><span>80%</span></span>
+            </div>
+            <div class="center muted">Developers</div>
+            <div class="actions">☰</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="bold">Electrodomésticos</div>
+            <div class="muted ellipsis">Ventas de electro......</div>
+            <div class="center muted">Media</div>
+            <div class="center muted">12/04/21</div>
+            <div class="center muted">12/09/21</div>
+            <div class="center muted">N/A</div>
+            <div class="center muted">1/3</div>
+            <div class="center">
+            <span class="ring ring-red"><span>32%</span></span>
+            </div>
+            <div class="center muted">Gerencia</div>
+            <div class="actions">☰</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="bold">Estrato 2 - Floridablanca</div>
+            <div class="muted ellipsis">Impacto en los sec.....</div>
+            <div class="center muted">Alta</div>
+            <div class="center muted">12/04/21</div>
+            <div class="center muted">12/09/21</div>
+            <div class="center muted">Met.Expo</div>
+            <div class="center muted">1/4</div>
+            <div class="center">
+            <span class="ring ring-green"><span>95%</span></span>
+            </div>
+            <div class="center muted">Marketing</div>
+            <div class="actions">☰</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="bold">Jóvenes en Acción</div>
+            <div class="muted ellipsis">Impacto en los sec.....</div>
+            <div class="center muted">Alta</div>
+            <div class="center muted">15/02/21</div>
+            <div class="center muted">09/11/21</div>
+            <div class="center muted">Met.Expo</div>
+            <div class="center muted">1/2</div>
+            <div class="center">
+            <span class="ring ring-orange"><span>75%</span></span>
+            </div>
+            <div class="center muted">Producción</div>
+            <div class="actions">☰</div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer-actions">
+        <button class="btn-main">Añadir Elementos</button>
+    </div>
+
+</main>
 
 </body>
 </html>
