@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/kario sin kairo.svg" type="image/x-icon">
-    <title>Reportes - Kario Media</title>
+    <title>Añadir Indicador - Kario Media</title>
     <link rel="stylesheet" href="styles/base/reset.css">
     <link rel="stylesheet" href="styles/base/animations.css">
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/components/layouts.css">
     <link rel="stylesheet" href="styles/components/forms.css">
     <link rel="stylesheet" href="styles/components/buttons.css">
-    <link rel="stylesheet" href="styles/pages/reporte.css">
+    <link rel="stylesheet" href="styles/pages/anadir.css">
     <link rel="stylesheet" href="styles/pages/responsive.css">
 </head>
 <body>
@@ -104,98 +104,93 @@
 </header>
 
 <main class="container">
-    <section class="report-container">
-        <form action="portafolio.html" method="GET" class="report-form">
-            
-            <div class="form-section">
-                <div class="contact-info">
-                    <h3>📞 Contacto - Kario Media</h3>
-                    <p><strong>Email:</strong> soporte@kariomedia.com</p>
-                    <p><strong>Teléfono:</strong> +57 (7) 6892234</p>
-                    <p><strong>Dirección:</strong> Cra. 45 #23-19, Bucaramanga, Santander</p>
-                    <p><strong>Horario:</strong> Lunes - Viernes 8:00 AM - 6:00 PM</p>
-                </div>
-            </div>
+    <section class="add-container">
+        <div class="add-header">
+            <h1>Añadir Nuevo Indicador</h1>
+            <p>Complete el formulario para agregar un nuevo indicador al panel</p>
+        </div>
 
+        <form action="portafolio.html" method="GET" class="add-form">
             <div class="form-section">
-                <h4 class="form-section-title">Información Personal</h4>
-                
+                <h4 class="form-section-title">Información Básica</h4>
+
                 <div class="form-row">
                     <div>
-                        <label for="fullname">Nombre Completo *</label>
-                        <input type="text" id="fullname" name="fullname" placeholder="Ej: Juan Pérez" required>
+                        <label for="indicador">Nombre del Indicador *</label>
+                        <input type="text" id="indicador" name="indicador" placeholder="Ej: Campaña Digital 2025" required>
                     </div>
                     <div>
-                        <label for="email">Correo Electrónico *</label>
-                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        <label for="descripcion">Descripción *</label>
+                        <input type="text" id="descripcion" name="descripcion" placeholder="Breve descripción del indicador" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div>
-                        <label for="phone">Teléfono *</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+57 300 123 4567" required>
-                    </div>
-                    <div>
-                        <label for="department">Departamento *</label>
-                        <select id="department" name="department" required>
-                            <option value="" disabled selected>Selecciona tu departamento</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="design">Diseño</option>
-                            <option value="developers">Developers</option>
-                            <option value="gerencia">Gerencia</option>
-                            <option value="produccion">Producción</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-section">
-                <h4 class="form-section-title">Detalles del Reporte</h4>
-                
-                <div class="form-row full">
-                    <div>
-                        <label for="problem-type">Tipo de Problema *</label>
-                        <select id="problem-type" name="problem-type" required>
-                            <option value="" disabled selected>Selecciona un tipo</option>
-                            <option value="error">Error Técnico</option>
-                            <option value="sugerencia">Sugerencia de Mejora</option>
-                            <option value="consulta">Consulta General</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row full">
-                    <div>
-                        <label for="priority">Prioridad *</label>
-                        <select id="priority" name="priority" required>
-                            <option value="" disabled selected>Selecciona la prioridad</option>
+                        <label for="categoria">Categoría *</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="" disabled selected>Selecciona una categoría</option>
                             <option value="baja">Baja</option>
                             <option value="media">Media</option>
                             <option value="alta">Alta</option>
                             <option value="critica">Crítica</option>
                         </select>
                     </div>
-                </div>
-
-                <div class="form-row full">
                     <div>
-                        <label for="description">Descripción del Problema *</label>
-                        <textarea id="description" name="description" placeholder="Describe detalladamente el problema o sugerencia..." required></textarea>
-                    </div>
-                </div>
-
-                <div class="form-row full">
-                    <div>
-                        <label for="steps">Pasos para Reproducir (si aplica)</label>
-                        <textarea id="steps" name="steps" placeholder="Ej: 1. Haz clic en... 2. Luego..."></textarea>
+                        <label for="area">Área Responsable *</label>
+                        <select id="area" name="area" required>
+                            <option value="" disabled selected>Selecciona un área</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="diseno">Diseño</option>
+                            <option value="developers">Developers</option>
+                            <option value="gerencia">Gerencia</option>
+                            <option value="produccion">Producción</option>
+                        </select>
                     </div>
                 </div>
             </div>
 
-            <button type="submit">Enviar Reporte</button>
+            <div class="form-section">
+                <h4 class="form-section-title">Fechas y Plazos</h4>
+
+                <div class="form-row">
+                    <div>
+                        <label for="fecha-inicio">Fecha de Inicio *</label>
+                        <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+                    </div>
+                    <div>
+                        <label for="fecha-fin">Fecha de Finalización *</label>
+                        <input type="date" id="fecha-fin" name="fecha-fin" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4 class="form-section-title">Métricas y Seguimiento</h4>
+
+                <div class="form-row">
+                    <div>
+                        <label for="formula">Fórmula o Metodología</label>
+                        <input type="text" id="formula" name="formula" placeholder="Ej: Met.Ágil, Met.Fibo">
+                    </div>
+                    <div>
+                        <label for="frecuencia">Frecuencia de Revisión</label>
+                        <input type="text" id="frecuencia" name="frecuencia" placeholder="Ej: 1/4, Semanal">
+                    </div>
+                </div>
+
+                <div class="form-row full">
+                    <div>
+                        <label for="objetivo">Objetivo del Indicador</label>
+                        <textarea id="objetivo" name="objetivo" placeholder="Describe el objetivo que se busca alcanzar con este indicador..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <a href="portafolio.html" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Guardar Indicador</button>
+            </div>
         </form>
     </section>
 </main>

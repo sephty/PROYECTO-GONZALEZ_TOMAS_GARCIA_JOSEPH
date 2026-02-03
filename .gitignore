@@ -1,0 +1,30 @@
+# IDEs y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporales
+*.tmp
+*.temp
+.cache/
+
+# Backup
+*.bak
+*.backup
+*~backup
+
+# Archivos de prueba
+test/
+tests/
+*.test.html

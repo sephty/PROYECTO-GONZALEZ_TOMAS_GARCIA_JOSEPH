@@ -1,0 +1,53 @@
+.delete-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.warning-box {
+    background: #fff5f5;
+    border: 2px solid var(--danger-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.warning-box strong {
+    display: block;
+    font-size: 16px;
+    color: var(--danger-color);
+    margin-bottom: 8px;
+}
+
+.warning-box p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+@media (max-width: 48rem) {
+    .warning-box {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .footer-actions {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .btn-cancel,
+    .btn-delete {
+        width: 100%;
+    }
+}
+
+@media (max-width: 23.5rem) {
+    .warning-box {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .warning-box strong {
+        font-size: 14px;
+    }
+}

@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/kario sin kairo.svg" type="image/x-icon">
     <title>Kario - Login</title>
-    
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style/login.css">
-    <link rel="stylesheet" href="style/utilities.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/base/animations.css">
+    <link rel="stylesheet" href="styles/components/buttons.css">
+    <link rel="stylesheet" href="styles/pages/login.css">
 </head>
 <body>
     <input type="checkbox" id="toggle-state" style="display: none;">
     <div class="container">
         <div class="logo-container">
-            <a href="portafolio.html">
+            <a href="inicio.html">
                 <img src="assets/img/kario sin kairo.svg" alt="Kario Logo" class="logo-image">
             </a>
         </div>
@@ -39,7 +40,7 @@
                     <input type="password" id="password" name="password" required>
                 </div>
 
-                <button type="button" class="btn-login" onclick="window.location.href='portafolio.html';">
+                <button type="button" class="btn-login" onclick="window.location.href='inicio.html';">
                     Ingresar al panel
                 </button>
 
@@ -48,5 +49,6 @@
                 </div>
             </form>
         </div>
+    </div>
 </body>
 </html>

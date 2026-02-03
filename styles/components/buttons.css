@@ -1,0 +1,109 @@
+
+
+.btn {
+    padding: 14px 50px;
+    border: none;
+    border-radius: var(--radius-xl);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #ff8533 100%);
+    color: var(--bg-white);
+    box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 106, 0, 0.4);
+}
+
+.btn-secondary {
+    background: #e0e0e0;
+    color: var(--text-medium);
+}
+
+.btn-secondary:hover {
+    background: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger-color) 0%, #e02d22 100%);
+    color: var(--bg-white);
+    box-shadow: 0 4px 15px rgba(255, 59, 48, 0.3);
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-main {
+    background: var(--primary-color);
+    border: none;
+    color: var(--bg-white);
+    padding: 14px 80px;
+    border-radius: var(--radius-xl);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.btn-send {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--bg-white);
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-send:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.btn-login {
+    display: block;
+    margin: 1.5rem auto 0;
+    height: 60px;
+    width: 200px;
+    padding: 0.8rem 2rem;
+    background: #e66536;
+    color: white;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-login:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

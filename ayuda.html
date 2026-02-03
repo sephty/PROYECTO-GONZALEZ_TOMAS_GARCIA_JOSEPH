@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/kario sin kairo.svg" type="image/x-icon">
-    <title>Reportes - Kario Media</title>
+    <title>Contacto - Kario Media</title>
     <link rel="stylesheet" href="styles/base/reset.css">
     <link rel="stylesheet" href="styles/base/animations.css">
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/components/layouts.css">
     <link rel="stylesheet" href="styles/components/forms.css">
     <link rel="stylesheet" href="styles/components/buttons.css">
-    <link rel="stylesheet" href="styles/pages/reporte.css">
+    <link rel="stylesheet" href="styles/pages/contacto.css">
     <link rel="stylesheet" href="styles/pages/responsive.css">
 </head>
 <body>
@@ -104,12 +104,12 @@
 </header>
 
 <main class="container">
-    <section class="report-container">
-        <form action="portafolio.html" method="GET" class="report-form">
-            
+    <section class="contact-container">
+        <form action="portafolio.html" method="GET" class="contact-form">
+
             <div class="form-section">
                 <div class="contact-info">
-                    <h3>📞 Contacto - Kario Media</h3>
+                    <h3>📞 Necesitas ayuda?</h3>
                     <p><strong>Email:</strong> soporte@kariomedia.com</p>
                     <p><strong>Teléfono:</strong> +57 (7) 6892234</p>
                     <p><strong>Dirección:</strong> Cra. 45 #23-19, Bucaramanga, Santander</p>
@@ -119,7 +119,7 @@
 
             <div class="form-section">
                 <h4 class="form-section-title">Información Personal</h4>
-                
+
                 <div class="form-row">
                     <div>
                         <label for="fullname">Nombre Completo *</label>
@@ -137,14 +137,11 @@
                         <input type="tel" id="phone" name="phone" placeholder="+57 300 123 4567" required>
                     </div>
                     <div>
-                        <label for="department">Departamento *</label>
-                        <select id="department" name="department" required>
-                            <option value="" disabled selected>Selecciona tu departamento</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="design">Diseño</option>
-                            <option value="developers">Developers</option>
-                            <option value="gerencia">Gerencia</option>
-                            <option value="produccion">Producción</option>
+                        <label for="subject">Asunto *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="cotizacion">Cotización</option>
                             <option value="otro">Otro</option>
                         </select>
                     </div>
@@ -152,50 +149,17 @@
             </div>
 
             <div class="form-section">
-                <h4 class="form-section-title">Detalles del Reporte</h4>
-                
-                <div class="form-row full">
-                    <div>
-                        <label for="problem-type">Tipo de Problema *</label>
-                        <select id="problem-type" name="problem-type" required>
-                            <option value="" disabled selected>Selecciona un tipo</option>
-                            <option value="error">Error Técnico</option>
-                            <option value="sugerencia">Sugerencia de Mejora</option>
-                            <option value="consulta">Consulta General</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                </div>
+                <h4 class="form-section-title">Mensaje</h4>
 
                 <div class="form-row full">
                     <div>
-                        <label for="priority">Prioridad *</label>
-                        <select id="priority" name="priority" required>
-                            <option value="" disabled selected>Selecciona la prioridad</option>
-                            <option value="baja">Baja</option>
-                            <option value="media">Media</option>
-                            <option value="alta">Alta</option>
-                            <option value="critica">Crítica</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row full">
-                    <div>
-                        <label for="description">Descripción del Problema *</label>
-                        <textarea id="description" name="description" placeholder="Describe detalladamente el problema o sugerencia..." required></textarea>
-                    </div>
-                </div>
-
-                <div class="form-row full">
-                    <div>
-                        <label for="steps">Pasos para Reproducir (si aplica)</label>
-                        <textarea id="steps" name="steps" placeholder="Ej: 1. Haz clic en... 2. Luego..."></textarea>
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
                     </div>
                 </div>
             </div>
 
-            <button type="submit">Enviar Reporte</button>
+            <button type="submit" class="btn-send">Enviar Mensaje</button>
         </form>
     </section>
 </main>
