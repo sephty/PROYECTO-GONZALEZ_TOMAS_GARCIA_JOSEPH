@@ -23,10 +23,11 @@ Todo el proyecto está diseñado bajo principios de:
 * **Accesibilidad básica**
 * **Código limpio y mantenible**
 
-***Pagina para visualizar el proyecto:*** https://ayuda-de-proyecto.netlify.app/
----
+### ***Pagina para visualizar el proyecto:*** https://ayuda-de-proyecto.netlify.app/
 
-## Tecnologías Utilizadas
+**PAGINA DE FIGMA:** https://www.figma.com/design/sRjCQkuNUQ9gKrMJYSyWBC/Kario-Media?node-id=0-1&t=bADKMwHo7z94kaMD-1
+
+### Tecnologías Utilizadas
 
 * **HTML5** — Estructura semántica de las vistas
 * **CSS3** — Diseño, animaciones, responsive y sistema de estilos
