@@ -154,12 +154,23 @@
     filter: grayscale(1);
 }
 
+
+
 .kpi-row:hover .delete-icon {
     opacity: 1;
     transform: scale(1.08);
 }
 
 .kpi-row:hover .delete-icon img {
+    filter: none;
+}
+
+.kpi-row:has(.delete-checkbox:checked) .delete-icon {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.kpi-row:has(.delete-checkbox:checked) .delete-icon img {
     filter: none;
 }
 
