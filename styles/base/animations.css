@@ -1,4 +1,4 @@
-/* Animaciones Reutilizables */
+/* 1) Animaciones de entrada */
 
 @keyframes fadeInUp {
     from {
@@ -36,6 +36,7 @@
     }
 }
 
+/* 2) Animaciones de salida */
 @keyframes fadeOutCard {
     to {
         opacity: 0;
@@ -43,6 +44,7 @@
     }
 }
 
+/* 3) Animaciones para logo y secuencias */
 @keyframes fadeInOutLogo {
     0% {
         opacity: 1;
@@ -93,6 +95,7 @@
     }
 }
 
+/* 4) Animaciones de reporte y móvil */
 @keyframes fadeInReporte {
     from {
         opacity: 0;

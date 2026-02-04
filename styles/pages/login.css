@@ -1,4 +1,4 @@
-
+/* 1) Fondo y layout general */
 body {
     background-color: black;
     background-image: url('../../assets/img/pexels-pixabay-159400.png');
@@ -12,6 +12,7 @@ body {
     overflow: hidden;
 }
 
+/* 2) Contenedor principal */
 .container {
     position: relative;
     width: 100%;
@@ -21,6 +22,7 @@ body {
     align-items: center;
 }
 
+/* 3) Tarjeta de login */
 .login-container {
     opacity: 0;
     background: var(--bg-light);
@@ -33,12 +35,14 @@ body {
     transition: opacity 0.5s ease, visibility 0.3s ease;
 }
 
+/* 4) Secuencia de logo inicial */
 .logo-container {
     position: absolute;
     text-align: center;
     animation: logoSequence 2.7s ease-in-out forwards;
 }
 
+/* 5) Logotipo grande */
 .logo-image {
     width: 120px;
     height: 120px;
@@ -46,6 +50,7 @@ body {
     object-fit: contain;
 }
 
+/* 6) Logotipo pequeño */
 .login-logo-image {
     width: 100px;
     height: auto;
@@ -53,6 +58,7 @@ body {
     display: block;
 }
 
+/* 7) Texto MEDIA */
 .media-text {
     color: gray;
     font-size: 20px;
@@ -61,6 +67,7 @@ body {
     margin-top: 5px;
 }
 
+/* 8) Encabezado del login */
 .login-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -87,6 +94,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* 9) Grupos del formulario */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -99,6 +107,7 @@ body {
     font-size: 0.95rem;
 }
 
+/* 10) Campos de entrada */
 input[type="text"],
 input[type="password"] {
     width: calc(100% - 2.4rem);
@@ -111,12 +120,14 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
+/* 11) Estado de enfoque */
 input:focus {
     outline: none;
     border-color: #eb4b16;
     box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
 }
 
+/* 12) Texto de ayuda */
 .help-text {
     text-align: center;
     margin-top: 1.5rem;
@@ -124,6 +135,7 @@ input:focus {
     font-size: 0.85rem;
 }
 
+/* 13) Responsive móvil */
 @media (max-width: 480px) {
     .login-container {
         padding: 2rem 1.5rem;

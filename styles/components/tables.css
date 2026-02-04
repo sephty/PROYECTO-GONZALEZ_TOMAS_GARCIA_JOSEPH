@@ -1,10 +1,11 @@
-
-
+/* 1) Tabla KPI general */
 .kpi-table {
     width: 100%;
 }
 
+/* 2) Encabezados y filas */
 .kpi-header,
+/* 3) Filas de indicadores */
 .kpi-row {
     display: grid;
     grid-template-columns: 1.5fr 2fr 1fr 1.2fr 1.2fr 1fr 0.8fr 1fr 1fr 0.4fr;
@@ -33,6 +34,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* 4) Columnas y texto auxiliar */
 .col-title {
     font-weight: 700;
     color: var(--text-medium);
@@ -55,6 +57,7 @@
     padding-right: 10px;
 }
 
+/* 5) Menú de acciones */
 .actions {
     display: flex;
     flex-direction: column;
@@ -70,6 +73,7 @@
     border-radius: 2px;
 }
 
+/* 6) Indicador circular de progreso */
 .ring {
     width: 36px;
     height: 36px;
@@ -99,6 +103,7 @@
     mask-composite: exclude;
 }
 
+/* 7) Variantes de color */
 .ring-red {
     --color: var(--danger-color);
 }
@@ -111,6 +116,7 @@
     --color: var(--warning-color);
 }
 
+/* 8) Selección y eliminación */
 .checkbox-cell {
     display: flex;
     align-items: center;
@@ -129,17 +135,32 @@
     font-weight: 700;
 }
 
+/* 9) Ícono de eliminación */
 .delete-icon {
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.7;
     transition: all 0.3s ease;
+}
+
+.delete-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(1);
 }
 
 .kpi-row:hover .delete-icon {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.08);
+}
+
+.kpi-row:hover .delete-icon img {
+    filter: none;
 }
 
 .kpi-row:has(.delete-checkbox:checked) {

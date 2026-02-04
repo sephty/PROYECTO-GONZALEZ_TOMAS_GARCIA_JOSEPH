@@ -1,5 +1,4 @@
-
-
+/* 1) Base de botones */
 .btn {
     padding: 14px 50px;
     border: none;
@@ -17,6 +16,7 @@
     transform: scale(0.98);
 }
 
+/* 2) Botón primario */
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color) 0%, #ff8533 100%);
     color: var(--bg-white);
@@ -28,6 +28,7 @@
     box-shadow: 0 6px 20px rgba(255, 106, 0, 0.4);
 }
 
+/* 3) Botón secundario */
 .btn-secondary {
     background: #e0e0e0;
     color: var(--text-medium);
@@ -38,6 +39,7 @@
     transform: translateY(-2px);
 }
 
+/* 4) Botón de peligro */
 .btn-danger {
     background: linear-gradient(135deg, var(--danger-color) 0%, #e02d22 100%);
     color: var(--bg-white);
@@ -53,6 +55,7 @@
     width: 100%;
 }
 
+/* 6) Botón principal */
 .btn-main {
     background: var(--primary-color);
     border: none;
@@ -67,7 +70,7 @@
     display: inline-block;
 }
 
-
+/* 7) Botón de envío */
 .btn-send {
     width: 100%;
     padding: 12px;
@@ -86,6 +89,7 @@
     transform: translateY(-1px);
 }
 
+/* 8) Botón de login */
 .btn-login {
     display: block;
     margin: 1.5rem auto 0;

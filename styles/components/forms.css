@@ -1,9 +1,9 @@
-
-
+/* 1) Secciones de formulario */
 .form-section {
     margin-bottom: 30px;
 }
 
+/* 2) Títulos de sección */
 .form-section-title {
     font-size: 16px;
     font-weight: 700;
@@ -13,6 +13,7 @@
     border-bottom: 2px solid var(--primary-color);
 }
 
+/* 3) Filas y columnas */
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -24,11 +25,13 @@
     grid-template-columns: 1fr;
 }
 
+/* 4) Contenedores internos */
 .form-row > div {
     display: flex;
     flex-direction: column;
 }
 
+/* 5) Etiquetas */
 label {
     font-weight: 600;
     color: var(--text-medium);
@@ -36,6 +39,7 @@ label {
     font-size: 14px;
 }
 
+/* 6) Campos de entrada */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -52,6 +56,7 @@ textarea {
     font-family: inherit;
 }
 
+/* 7) Estados de enfoque */
 input:focus,
 select:focus,
 textarea:focus {
@@ -61,11 +66,13 @@ textarea:focus {
     background-color: var(--bg-white);
 }
 
+/* 8) Área de texto */
 textarea {
     resize: vertical;
     min-height: 100px;
 }
 
+/* 9) Select con ícono */
 select {
     cursor: pointer;
     appearance: none;
@@ -75,6 +82,7 @@ select {
     padding-right: 40px;
 }
 
+/* 10) Bloque de contacto */
 .contact-info {
     background-color: #f0f0f0;
     padding: 15px;
@@ -83,12 +91,14 @@ select {
     border-left: 4px solid var(--primary-color);
 }
 
+/* 11) Título del bloque de contacto */
 .contact-info h3 {
     margin: 0 0 10px 0;
     color: var(--text-medium);
     font-size: 14px;
 }
 
+/* 12) Texto del bloque de contacto */
 .contact-info p {
     margin: 5px 0;
     color: var(--text-light);

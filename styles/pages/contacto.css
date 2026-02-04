@@ -1,9 +1,12 @@
+/* 1) Contenedor principal */
 .contact-container {
     max-width: 1180px;
     margin: 1px auto;
     padding: 5px 6px;
+    animation: fadeInUp 0.6s ease;
 }
 
+/* 2) Título de contacto */
 .contact-title {
     font-size: 28px;
     font-weight: 800;
@@ -12,6 +15,7 @@
     color: var(--text-dark);
 }
 
+/* 3) Caja del formulario */
 .contact-form {
     background: var(--bg-white);
     border: 2px solid #ececec;
@@ -20,12 +24,14 @@
     box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
+/* 4) Texto introductorio */
 .contact-form > p {
     text-align: center;
     color: var(--text-light);
     margin-bottom: 22px;
 }
 
+/* 5) Responsive tablet */
 @media (max-width: 48rem) {
     .contact-container {
         margin: 14px auto;
@@ -42,6 +48,7 @@
     }
 }
 
+/* 6) Responsive móvil */
 @media (max-width: 23.5rem) {
     .contact-title {
         font-size: 20px;

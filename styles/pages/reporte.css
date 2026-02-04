@@ -1,3 +1,4 @@
+/* 1) Contenedor principal */
 .report-container {
     max-width: 1000px;
     margin: 1px auto;
@@ -9,6 +10,7 @@
     animation: fadeInReporte 0.8s ease-in-out;
 }
 
+/* 2) Tarjeta del formulario */
 .report-form {
     max-width: 700px;
     width: 100%;
@@ -21,15 +23,18 @@
     transition: box-shadow 0.3s ease;
 }
 
+/* 3) Hover del formulario */
 .report-form:hover {
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
 }
 
+/* 4) Títulos en el reporte */
 .report-form .form-section-title {
     color: var(--secondary-color);
     border-bottom-color: var(--secondary-color);
 }
 
+/* 5) Enfoque de campos */
 .report-form input:focus,
 .report-form select:focus,
 .report-form textarea:focus {
@@ -37,6 +42,7 @@
     box-shadow: 0 0 0 3px rgba(214, 108, 54, 0.1);
 }
 
+/* 6) Botón principal */
 .report-form button {
     width: 100%;
     padding: 14px;
@@ -60,6 +66,7 @@
     transform: translateY(0);
 }
 
+/* 7) Responsive tablet */
 @media (max-width: 48rem) {
     .report-container {
         margin: 14px auto;
@@ -72,6 +79,7 @@
     }
 }
 
+/* 8) Responsive móvil */
 @media (max-width: 23.5rem) {
     .report-form {
         padding: 25px 18px;

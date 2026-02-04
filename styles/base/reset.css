@@ -1,4 +1,5 @@
 
+/* 1) Reset global */
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* 2) Variables de tema */
 :root {
     --primary-color: #ff6a00;
     --primary-hover: #e04a1f;
@@ -32,6 +34,7 @@
     --radius-full: 50px;
 }
 
+/* 3) Estilos base del body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-gray);
@@ -40,6 +43,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* 4) Enlaces */
 a {
     text-decoration: none;
     color: inherit;
