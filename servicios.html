@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/kario sin kairo.svg" type="image/x-icon">
+    <title>Servicios Kario</title>
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/base/animations.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/layouts.css">
+    <link rel="stylesheet" href="styles/components/buttons.css">
+    <link rel="stylesheet" href="styles/pages/servicios.css">
+    <link rel="stylesheet" href="styles/pages/responsive.css">
+</head>
+<body>
+
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-overlay"></label>
+
+<div class="mobile-menu">
+    <div class="mobile-user-section">
+        <div class="mobile-user-info">
+            <img src="assets/img/pp.png" alt="Usuario">
+            <div class="mobile-user-details">
+                <h4>Pedro Felipe Gómez</h4>
+                <p>Administrador</p>
+            </div>
+        </div>
+        <a href="index.html" class="mobile-logout">Cerrar Sesión</a>
+    </div>
+    
+    <div class="mobile-menu-items">
+        <a class="mobile-menu-item" href="anadir.html">
+            <img src="assets/img/Group 3.svg" alt=""> Añadir Indicador
+        </a>
+        <a class="mobile-menu-item" href="portafolio.html">
+            <img src="assets/img/Icon open-reload.svg" alt=""> Refrescar Panel
+        </a>
+        <a class="mobile-menu-item" href="eliminar.html">
+            <img src="assets/img/Icon material-delete-forever.svg" alt=""> Eliminar Indicador
+        </a>
+        <a class="mobile-menu-item" href="reporte.html">
+            <img src="assets/img/Icon material-bug-report.svg" alt=""> Reportar Problema
+        </a>
+        <a class="mobile-menu-item" href="ayuda.html">
+            <img src="assets/img/interrogative.png" alt=""> Ayuda y Soporte
+        </a>
+    </div>
+</div>
+
+<div class="main-wrapper">
+    <header class="top-nav-container">
+        <div class="top-nav">
+            <label for="menu-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="nav-left">
+                <a class="nav-item" href="anadir.html">
+                    <img src="assets/img/Group 3.svg" alt=""> <span>Añadir</span>
+                </a>
+                <a class="nav-item" href="portafolio.html">
+                    <img src="assets/img/Icon open-reload.svg" alt=""> <span>Refrescar</span>
+                </a>
+                <a class="nav-item" href="eliminar.html">
+                    <img src="assets/img/Icon material-delete-forever.svg" alt=""> <span>Eliminar</span>
+                </a>
+            </div>
+
+            <div class="logo-placeholder">
+                <a href="portafolio.html">
+                    <img src="assets/img/kario sin kairo.svg" alt="Kario Logo">
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <a class="nav-item" href="reporte.html">
+                    <img src="assets/img/Icon material-bug-report.svg" alt=""><span>Reportar</span>
+                </a>
+                <a class="nav-item" href="ayuda.html">
+                    <img src="assets/img/interrogative.png" alt=""><span>Ayuda</span>
+                </a>
+
+                <div class="nav-icons">
+                    <img src="assets/img/Icon ionic-ios-settings.svg" alt="Configuración">
+                    <div class="notification-wrapper">
+                        <img src="assets/img/Icon material-notifications-active.svg" alt="Notificaciones">
+                        <div class="notification-tooltip">No tienes notificaciones</div>
+                    </div>
+                    <div class="user-avatar-wrapper">
+                        <div class="user-avatar">
+                            <img src="assets/img/pp.png" alt="Usuario">
+                        </div>
+                        <div class="user-menu">
+                            <a href="index.html" class="logout-link">Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="planes-container">
+            <div class="planes-header">
+                <h1>Elige el plan ideal para tu equipo</h1>
+                <p>Planes flexibles para visualizar, gestionar y reportar indicadores con KARIO MEDIA.</p>
+            </div>
+            <div class="planes-grid">
+                <article class="plan-card plan-card--basic">
+                    <span class="plan-badge">Más accesible</span>
+                    <h2>Plan Básico</h2>
+                    <p class="plan-price">$19.900 / mes</p>
+                    <p class="plan-subtitle">Lo esencial para iniciar con tus KPI.</p>
+                    <ul class="plan-features">
+                        <li>Dashboard con indicadores clave</li>
+                        <li>Acceso responsive y rápido</li>
+                        <li>Reportes básicos incluidos</li>
+                    </ul>
+                    <button class="plan-cta">Probar plan básico</button>
+                    <div class="plan-extra">
+                        <p>Incluye módulos esenciales y navegación limpia para comenzar a medir resultados.</p>
+                    </div>
+                </article>
+
+                <article class="plan-card plan-card--pro">
+                    <span class="plan-badge">Más popular</span>
+                    <h2>Plan Pro</h2>
+                    <p class="plan-price">$39.900 / mes</p>
+                    <p class="plan-subtitle">Seguimiento avanzado para equipos en crecimiento.</p>
+                    <ul class="plan-features">
+                        <li>Gestión completa de indicadores</li>
+                        <li>Reportes detallados y alertas</li>
+                        <li>Integración visual de áreas</li>
+                    </ul>
+                    <button class="plan-cta">Elegir Plan Pro</button>
+                    <div class="plan-extra">
+                        <p>Optimiza la toma de decisiones con vistas ampliadas y métricas frecuentes.</p>
+                    </div>
+                </article>
+
+                <article class="plan-card plan-card--premium">
+                    <span class="plan-badge">Experiencia total</span>
+                    <h2>Plan Premium</h2>
+                    <p class="plan-price">$59.900 / mes</p>
+                    <p class="plan-subtitle">Control total y soporte prioritario.</p>
+                    <ul class="plan-features">
+                        <li>Personalización de dashboards</li>
+                        <li>Soporte prioritario y asesoría</li>
+                        <li>Panel colaborativo avanzado</li>
+                    </ul>
+                    <button class="plan-cta">Obtener Premium</button>
+                    <div class="plan-extra">
+                        <p>Ideal para organizaciones que buscan personalización y acompañamiento continuo.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
